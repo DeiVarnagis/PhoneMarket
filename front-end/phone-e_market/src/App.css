@@ -1,0 +1,371 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.App {
+    text-align: center;
+    background-color: #727273;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Atributes with an ID */
+#logoSpan {
+    font-size: 2.5rem;
+    color: #ffcd38;
+}
+/* White color  */
+/* ------------------------------------------------------------------------------------------*/
+.secondaryColor {
+    color: #cccebd;
+}
+/* Navbar style  */
+/* ------------------------------------------------------------------------------------------*/
+/* Own styles  */
+.logo {
+    font-size: 2rem;
+    font-family: 'Bangers', cursive;
+    margin-right: 10px;
+}
+.navLinks {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #1a2526;
+}
+.roolNavLink {
+    font-size: 2rem;
+}
+.userIcon {
+    margin-top: 1rem;
+}
+.navUserIcon {
+    margin-left: 6%;
+    padding-right: 4%;
+}
+.userName {
+    color: #ffcd38;
+    font-size: 1.25rem;
+}
+.greetings {
+    font-family: 'Bangers', cursive;
+}
+/* ------------------------------------------------------------------------------------------*/
+/* MAIN BODY */
+/* ------------------------------------------------------------------------------------------*/
+.secondContainer {
+    padding-top: 95px;
+}
+/* ------------------------------------------------------------------------------------------*/
+/* upload */
+/* ------------------------------------------------------------------------------------------*/
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset 0.15s ease-in-out,
+        background-color 0.15s linear;
+    transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+    padding: 120px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+.files input:focus {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset 0.15s ease-in-out,
+        background-color 0.15s linear;
+    transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+    border: 1px solid #92b0b3;
+}
+.files {
+    position: relative;
+}
+.files:after {
+    pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: '';
+    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.color input {
+    background-color: #f1f1f1;
+}
+.files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 40px;
+    content: ' or drag it here. ';
+    display: block;
+    margin: 0 auto;
+    color: #2ea591;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+.parent {
+    margin-top: 6%;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 3%;
+}
+
+.parent img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+}
+/* Navbar  */
+/* ------------------------------------------------------------------------------------------*/
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+    position: relative;
+    width: 36px;
+    font-size: 24px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0;
+    font-family: sans-serif;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+    top: 3px;
+    line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+    top: -10px;
+}
+
+@media (min-width: 576px) {
+    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: 70px;
+        vertical-align: middle;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
+        display: block;
+        width: 48px;
+        margin: 2px auto 4px auto;
+        top: 0;
+        line-height: 24px;
+    }
+
+    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
+        top: -7px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: 70px;
+        vertical-align: middle;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+        display: block;
+        width: 48px;
+        margin: 2px auto 4px auto;
+        top: 0;
+        line-height: 24px;
+    }
+
+    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+        top: -7px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: 70px;
+        vertical-align: middle;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+        display: block;
+        width: 48px;
+        margin: 2px auto 4px auto;
+        top: 0;
+        line-height: 24px;
+    }
+
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+        top: -7px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: 70px;
+        vertical-align: middle;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
+        display: block;
+        width: 48px;
+        margin: 2px auto 4px auto;
+        top: 0;
+        line-height: 24px;
+    }
+
+    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
+        top: -7px;
+    }
+}
+/* Footer */
+/* ------------------------------------------------------------------------------------------*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; /* Footer height */
+}
+/* Action button  */
+/* ------------------------------------------------------------------------------------------*/
+.action-btn {
+    margin: 1%;
+}
+.action-btn-div {
+    display: contents;
+    float: right;
+    padding-right: 2%;
+}
+/* Login */
+/* ------------------------------------------------------------------------------------------*/
+.loginImg {
+    background-image: 'phone-e_market\src\images\loginPhoto.jpg';
+    width: 100%;
+    height: 100%;
+}
+
+.parentDiv img {
+    width: 100%;
+    height: 100%;
+}
+/* ------------------------------------------------------------------------------------------*/
+/* Phone card */
+/* ------------------------------------------------------------------------------------------*/
+.action_bar {
+    background-color: #cccebd;
+}
+.card-icons {
+    text-align: right;
+}
+.card-content {
+    height: 170px;
+    width: 100%;
+}
+/* ------------------------------------------------------------------------------------------*/
+/* Phone detail page */
+/* ------------------------------------------------------------------------------------------*/
+.carouselItem {
+    width: auto;
+    height: 400px;
+}
+.carousel-control-next {
+    width: 8% !important;
+    background-color: #ffcd38;
+}
+.carousel-control-prev {
+    width: 8% !important;
+    background-color: #cccebd;
+}
+.detailMainDiv {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.detailChildren {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.carousel {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+/* ------------------------------------------------------------------------------------------*/
+/* Pagination */
+/* ------------------------------------------------------------------------------------------*/
+.page-item {
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------------*/
+/* Edit page  */
+/* ------------------------------------------------------------------------------------------*/
+.MuiInputBase-fullWidth {
+    height: 100%;
+}
+
+.phones_title {
+    color: #343a40;
+    font-family: 'Bangers', cursive;
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 44px;
+    margin: 0 0 12px;
+    text-align: center;
+}
